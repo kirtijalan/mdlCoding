@@ -65,21 +65,22 @@ export default class Posts extends React.Component{
     });
     return(
       <div>
-        <p><input type="text" placeholder="Search" id="inputStr" onChange={filterData()}/></p>
+        <p><input type="text" placeholder="Search" id="inputStr" /></p>
+          {/* onChange={filterData()} */}
         {/* <button value = 'Filter' onClick={filterData()}/> */}
-      {this.state.fullData?
+      {/* {this.state.fullData?  */}
       <div>
         <table style={styles.table}>
           {myPostList}
         </table>
       </div>
-      :
+      {/* // :
       <div>
         <table style={styles.table}>
           {FilterList}
         </table>
-      </div>
-    }
+     </div> */}
+    
   </div>
     );
   }
